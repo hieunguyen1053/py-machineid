@@ -83,7 +83,7 @@ def id() -> str:
   if not id:
     raise Exception('failed to obtain id on platform {}'.format(platform))
 
-  return id
+  return id.strip()
 
 def hashed_id(app_id: str = '') -> str:
   """
